@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:key="no_picture"
+        android:title="@string/preference_no_picture_title"
+        android:summary="@string/preference_no_picture_summary" />
+    <SwitchPreference
+        android:key="slip_to_switch_page"
+        android:title="@string/preference_slip_to_switch_page"
+        android:defaultValue="false"/>
+
+
+
+</PreferenceScreen>

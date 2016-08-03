@@ -1,0 +1,15 @@
+body{
+    background-color:#fff;
+}
+
+div.vote_icon{
+    display:none;
+}
+
+span.showArtTag{
+    display:none;
+}
+
+a{
+	color: black;
+}

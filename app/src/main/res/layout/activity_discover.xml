@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/discover_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/discover_toolbar"
+
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_alignParentTop="true"
+            android:id="@+id/discover_time_picker_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:text="@string/discover_trade_begin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:id="@+id/discover_time_picker_begin"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="abc"
+                    android:src="@android:drawable/ic_menu_preferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/discover_time_begin"
+                    android:layout_gravity="center"
+                    android:layout_weight="10"
+                    android:textSize="24sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:text="@string/discover_trade_end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <ImageButton
+                    android:id="@+id/discover_time_picker_end"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="end time"
+                    android:src="@android:drawable/ic_menu_preferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/discover_time_end"
+                    android:layout_gravity="center"
+                    android:textSize="24sp"
+                    android:layout_weight="10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/discover_time_picker_reset"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover_trade_reset"/>
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/discover_time_picker_start"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/discover_trade_start"/>
+            </TableRow>
+        </LinearLayout>
+        <TextView
+            android:layout_below="@+id/discover_time_picker_layout"
+            android:textSize="24sp"
+            android:id="@+id/discover_trade_total"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_below="@+id/discover_trade_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list_discovery">
+        </ListView>
+
+        <TextView
+            android:text="@string/discover_des"
+            android:layout_margin="0dp"
+            android:textSize="12sp"
+            android:textColor="#bbb"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

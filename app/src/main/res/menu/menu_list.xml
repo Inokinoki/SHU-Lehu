@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/action_new_article"
+        android:title="@string/action_article"
+        android:icon="@drawable/ic_action_document"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_jump_page"
+        android:title="@string/article_jump"
+        android:orderInCategory="60"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_previous_page"
+        android:icon="@drawable/ic_action_goleft"
+        android:title="@string/action_pre"
+        android:orderInCategory="80"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_next_page"
+        android:icon="@drawable/ic_action_goright"
+        android:title="@string/action_next"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

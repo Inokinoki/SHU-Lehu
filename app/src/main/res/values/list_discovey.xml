@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_title_discover">
+        <item>晨跑查询</item>
+        <item>消费查询</item>
+        <item>教务管理</item>
+        <item>选课网站1</item>
+        <item>选课网站2</item>
+    </string-array>
+    <string-array name="list_url_discover">
+        <item>http://card.lehu.shu.edu.cn/CardTrainingDetail.aspx</item>
+        <item>http://card.lehu.shu.edu.cn/CardTradeDetail.aspx</item>
+        <item>http://cj.shu.edu.cn/</item>
+        <item>http://xk.shu.edu.cn:8080/</item>
+        <item>http://xk.shu.edu.cn/</item>
+    </string-array>
+</resources>
