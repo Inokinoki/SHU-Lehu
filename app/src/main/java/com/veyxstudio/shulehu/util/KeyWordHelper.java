@@ -60,9 +60,9 @@ public class KeyWordHelper {
 
 
     // Advertisement IDs
-    public static final String PublishID    =   "56OJ2bj4uNxvxuoKXg";
-    public static final String InlineID     =   "16TLPS6lAp9ISNUUiYpuShhz";
-    public static final String LoginID      =   "16TLPS6lAp9ISNUUZvV70dzk";
+    public static final String PublishID    =   "56OJyM1ouMGoaSnvCK";
+    public static final String InlineID     =   "16TLwebvAchksY6iO_8oSb-i";
+    public static final String LoginID      =   "16TLwebvAchksY6iOa7F4DXs";
     public static final String StartID      =   "16TLPS6lAp9ISNUUZNqzfP-s";
 
 }
