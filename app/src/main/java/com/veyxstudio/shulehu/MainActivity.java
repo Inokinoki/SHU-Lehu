@@ -24,6 +24,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.veyxstudio.shulehu.fragment.AboutFragment;
 import com.veyxstudio.shulehu.fragment.CategoryFragment;
 import com.veyxstudio.shulehu.fragment.MarkFragment;
 import com.veyxstudio.shulehu.fragment.SettingFragment;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity
 
     private MainHandler handler;
 
+    private AboutFragment aboutFragment;
     private HomeFragment homeFragment;
     private DiscoverFragment discoverFragment;
     private CategoryFragment categoryFragment;
@@ -133,6 +135,7 @@ public class MainActivity extends AppCompatActivity
     private void initFragment(){
         // Init fragment.
         this.fragmentPointer = R.id.nav_home;
+        aboutFragment = new AboutFragment();
         homeFragment = new HomeFragment();
         discoverFragment = new DiscoverFragment();
         categoryFragment = new CategoryFragment();
@@ -297,7 +300,12 @@ public class MainActivity extends AppCompatActivity
             }
         } else if (id == R.id.nav_about) {
             if(fragmentPointer != R.id.nav_about){
-
+                FragmentManager fragmentManager = this.getFragmentManager();
+                FragmentTransaction fragmentTransaction =
+                        fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.main_container
+                        , aboutFragment);
+                fragmentTransaction.commit();
                 fragmentPointer = R.id.nav_about;
             }
         } else if (id == R.id.nav_setting) {
