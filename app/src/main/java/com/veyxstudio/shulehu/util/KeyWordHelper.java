@@ -57,4 +57,12 @@ public class KeyWordHelper {
     public static final String replyAid     =   "aid";
     public static final String replyTitle   =   "Title";
     public static final String replyContent =   "ReplyContent";
+
+
+    // Advertisement IDs
+    public static final String PublishID    =   "56OJ2bj4uNxvxuoKXg";
+    public static final String InlineID     =   "16TLPS6lAp9ISNUUiYpuShhz";
+    public static final String LoginID      =   "16TLPS6lAp9ISNUUZvV70dzk";
+    public static final String StartID      =   "16TLPS6lAp9ISNUUZNqzfP-s";
+
 }
