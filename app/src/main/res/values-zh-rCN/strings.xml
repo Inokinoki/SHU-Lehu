@@ -20,7 +20,6 @@
     <string name="snackbar_logging">登录中&#8230;</string>
 
     <string name="app_name">随享乐乎</string>
-    <string name="hello_world">Hello 随享乐乎!</string>
 
     <string name="action_settings">设置</string>
     <string name="action_login">登录</string>
@@ -94,6 +93,9 @@
 	    					\nveyx.shaw@gmail.com与我取得联系</string>
 
     <string name="default_nickname">乐乎用户</string>
+
+    <string name="navigation_drawer_open">打开导航抽屉</string>
+    <string name="navigation_drawer_close">关闭导航抽屉</string>
 
     <!-- Errors -->
     <string name="error">出错了</string>
