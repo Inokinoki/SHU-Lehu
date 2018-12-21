@@ -99,9 +99,12 @@ public class MainActivity extends AppCompatActivity
             Log.i(LOG_TAG, "Nick name: " + sharedPreferences.
                     getString(KeyWordHelper.pNickname, " "));
         }
-        ((TextView)findViewById(R.id.nav_header_studentNo))
-                .setText(sharedPreferences.
-                        getString(KeyWordHelper.pUsername, " "));
+        //((TextView)findViewById(R.id.nav_header_studentNo))
+        //        .setText(sharedPreferences.
+        //                getString(KeyWordHelper.pUsername, " "));
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        TextView text = navigationView.getHeaderView(0).findViewById(R.id.nav_header_studentNo);
+        text.setText(sharedPreferences.getString(KeyWordHelper.pUsername, " "));
         Log.i(LOG_TAG, "User name: " + sharedPreferences.
                 getString(KeyWordHelper.pUsername, " "));
         // Init cache file expire.
@@ -127,11 +130,14 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // Init click event.
-        ((Button)findViewById(R.id.nav_header_login)).setOnClickListener(this);
-        ((TextView)findViewById(R.id.article_search_bar)).setOnClickListener(this);
+        Button loginButton = navigationView.getHeaderView(0).findViewById(R.id.nav_header_login);
+        loginButton.setOnClickListener(this);
+        // TextView text = navigationView.findViewById(R.id.article_search_bar);
+        // text.setOnClickListener(this);
         // Init handler.
         handler = new MainHandler(this);
     }
+
     private void initFragment(){
         // Init fragment.
         this.fragmentPointer = R.id.nav_home;
